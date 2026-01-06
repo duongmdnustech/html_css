@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vn">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+    <head>
+        <meta title="Baseball Playground">
+    </head>
+    <body>
+        <style>
+            header, footer {
+                margin: 0;
+                padding: 0;
+                height: 100px;
+                background-color: #171c22;
+                color: #fcfcfc;
+                align-items: center;
+                display: flex;
+            }
+
+            .badge img {
+                width: 30px;
+            }
+
+            .badge {
+                margin-left: 20px;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                margin-right: 30vw;
+            }
+
+            .badge .title {
+                font-size: larger;
+                font-weight: bolder;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 25px;
+            }
+
+            .nav-bar {
+                display: flex;
+                gap: 30px;
+                font-weight: bold;
+            }
+
+            main {
+                height: 100vh;
+                z-index: -1;
+            }
+
+            main .content {
+                padding: 20vh 20vw;
+                width: 50vw;
+                color: #161414;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .content .primary {
+                font-weight: bolder;
+                font-size: 40px;
+            }
+            .background {
+                width:100vw;
+                height: calc(100vh - 100px);
+                opacity: 0.6;
+                position: fixed;
+                z-index: -2;
+            }
+
+            .btn-group button:hover {
+                cursor: pointer;
+            }
+
+            .btn-group button {
+                padding: 10px;
+                border-radius: 10px;
+                border: 0px
+            }
+
+            .btn-group .blue {
+                color: #fcfcfc;
+                background-color: #207dff;
+            }
+
+            .btn-group .green {
+                color: #fcfcfc;
+                background-color: #00bd57;
+            }
+
+            footer {
+                padding: 20px;
+                gap: 5vw;
+                display: flex;
+                position:sticky;
+                bottom: 0;
+            }
+
+            footer .vs {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .img-circle {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            .vs .team {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 10px;
+                justify-content: center;
+                align-items: center;
+                font-weight: bolder;
+            }
+
+            footer .match {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            footer .match .primary {
+                color: #757a7f;
+                font-weight: bolder;
+            }
+
+            footer .timebox {
+                display: inline-flex;
+                flex-direction: row;
+                gap: 20px
+            }
+
+            footer .timebox .divider {
+                height: 50px;
+                width: 2px;
+                background-color: #fcfcfc;
+            }
+            
+            .timebox div .timer {
+                font-weight: bold ;
+                font-size: 30px
+            }
+            
+            @media (width <= 900px) {
+                .nav-bar {
+                    display: none;
+                }    
+            }
+
+        </style>
+        <img class="background" src="https://cdn1.sportngin.com/attachments/photo/2b5f-214135243/18WRN_Champions_Cucuys_Baseball_Club_large.JPEG" alt="">
+            
+        <header>
+            <div class="badge">
+                <img src="https://www.rhphoenixtournaments.com/wp-content/uploads/2016/01/RichmondHillPhoenix.png" alt="PHOENIX" usemap="#phoenix_team"/>
+                <div class="title">PHOENIX</div>
+            </div>
+            <div class="nav-bar">
+                <div>HOME</div>
+                <div>ABOUT</div>
+                <div>GAME</div>
+                <div>BLOG</div>
+                <div>CONTACT</div>
+                <div>BUY TICKET</div>
+            </div>
+        </header>
+        <map name="phoenix_team">
+            <area shape="default" alt="phoenix_team" href="https://phoenixcharlestownbaseballclub.godaddysites.com/" target="_blank">
+        </map>
+        
+        <main>
+            <div class="content">
+                <div class="primary">
+                    <div>FIELDRUN</div>
+                    <div>BASEBALL CLUB</div>
+                </div>
+                <div>A small river named Duden flows thier place and supplies it with necessary regelialia</div>
+                <div class="btn-group">
+                    <button class="blue">Watch match</button>
+                    <button class="green">Get ticket</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="vs">
+                <div class="team">
+                    <img class="img-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQr5ruummCZmeJjKWasPuPIGCYRPHMADXrFA&s" alt="">
+
+                    <div>PHOENIX</div>
+                </div>
+                
+                vs
+
+                <div class="team">
+                    <img class="img-circle" src="https://pbs.twimg.com/media/Ed4N_7EXsAIJDfI.jpg" alt="">
+
+                    <div>JACKSONVILLE</div>
+                </div>
+                
+            </div>
+            <div class="match">
+                <div class="primary">BASEBALL CHAMPIONS LEAGUE</div>
+                <div class="message">Semi-final</div>
+            </div>
+            <div class="timebox">
+                <div>
+                    <div class="timer">171</div>
+                    <div>Days</div>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <div class="timer">11</div>
+                    <div>Hours</div>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <div class="timer">10</div>
+                    <div>Minutes</div>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <div class="timer">39</div>
+                    <div>Seconds</div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="green">Buy Ticket</button>
+            </div>
+        </footer>
+    </body>
+</html>
