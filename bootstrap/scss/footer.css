@@ -1,0 +1,80 @@
+footer {
+  background-color: #171c22;
+  color: aliceblue;
+  justify-items: center;
+  align-items: center;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "team match timebox button";
+  padding: 20px;
+  justify-content: space-between;
+}
+footer .teams {
+  grid-area: team;
+  display: flex;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+footer .teams .team {
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+footer .teams .team img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+footer .teams .team div {
+  font-size: 12px;
+}
+footer .match {
+  grid-area: match;
+}
+footer .match .primary {
+  font-size: 20px;
+}
+footer .match .message {
+  font-size: 12px;
+  font-weight: 400;
+}
+footer .timebox {
+  grid-area: timebox;
+  display: flex;
+  gap: 10px;
+}
+footer .timebox .divider {
+  height: 45px;
+  width: 2px;
+  background-color: aliceblue;
+}
+footer .timebox .timeslot .timer {
+  font-size: 24px;
+}
+footer button {
+  grid-area: button;
+}
+
+@media (width <= 900) {
+  footer {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "teams match" "timebox button";
+  }
+  footer .teams {
+    grid-area: teams;
+  }
+  footer .match {
+    grid-area: match;
+  }
+  footer .timebox {
+    grid-area: timebox;
+  }
+  footer button {
+    grid-area: button;
+  }
+}/*# sourceMappingURL=footer.css.map */

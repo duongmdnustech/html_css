@@ -1,0 +1,19 @@
+header {
+  .nav-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .nav-linked {
+      color: aliceblue;
+    }
+
+    .nav-linked:hover {
+      cursor: pointer;
+      background-color: rgb(112, 176, 231);
+      border-radius: 10px;
+      padding: 10px;
+      transform: translateY(-5px);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+body {
+  background-image: url(https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg_2x/f_auto/primary/xtn2ssecfhdlb9tgonnx);
+}
+
+.main .content {
+  color: aliceblue;
+  margin-left: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}/*# sourceMappingURL=main.css.map */
