@@ -1,24 +1,22 @@
 const eventAdd = () => {
     const btn_lst = document.getElementsByClassName("btn");
+    const element = document.getElementById("screen")
+    
     for (let btn of btn_lst) {
         if (btn.innerHTML == "=") btn.addEventListener("click", function(){
-            const equation = (document.getElementById("screen").innerHTML)
-            console.log(equation)
-            const value = (eval(equation))
-            console.log(value)
+            const equation = (element.innerHTML)
 
-            document.getElementById("screen").innerHTML = value
+            const value = (eval(equation))
+
+            element.innerHTML = value
         })
         else if (/[+-x/.0-9]+$/.test(btn.innerHTML)) {
             btn.addEventListener("click", function(){
-                document.getElementById("screen").innerHTML  +=  (" " + btn.innerHTML)
-                console.log(document.getElementById("screen").innerHTML)
+                if (btn.innerHTML == "x") element.innerHTML  +=  "*"
+                else element.innerHTML  +=  (btn.innerHTML)
             })
         }
-        
     }
-
-
 }
 
 eventAdd()
