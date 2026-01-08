@@ -1,78 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta title="calculator">
-    </head>
-    <style>
-        body {
-            align-self: center;
-            justify-self: center;
-        }
+  <head>
+    <meta title="calculator">
+  </head>
+  <style>
+    body {
+      align-self: center;
+      justify-self: center;
+    }
 
-        .container {
-            background-color: aqua;
-            margin-top: 10vh;
-            padding: 50px;
-            width: 500px;
-            height: 600px;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-            align-items: center;
-            border: brown 2px solid;
-            border-radius: 10px;
-        }
+    .container {
+      background-color: aqua;
+      margin-top: 10vh;
+      padding: 50px;
+      width: 500px;
+      height: 600px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      border: brown 2px solid;
+      border-radius: 10px;
+    }
 
-        #screen {
-            height: 200px;
-            width: 100%;
-            background-color: bisque;
-            border: brown 2px solid;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            text-align: right;
-            justify-items:center;
-            font-size: 50px;
-            font-weight: bold;
-            padding: 10px;
-            overflow-x: scroll;
-            scrollbar-width: none;
-        }
+    #screen {
+      height: 200px;
+      width: 100%;
+      background-color: bisque;
+      border: brown 2px solid;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      text-align: right;
+      justify-items:center;
+      font-size: 50px;
+      font-weight: bold;
+      padding: 10px;
+      overflow-x: scroll;
+      scrollbar-width: none;
+    }
 
-        #btn-list {
-            margin-top: 40px;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-            align-self: center;
-        }
+    #btn-list {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-self: center;
+    }
 
-        .btn {
-            width: 77.5px;
-            height: 77.5px;
-            text-align: center;
-            background-color: antiquewhite;
-            border: brown 2px solid;
-            border-radius: 10px;
-            font-size: 40px;
-            font-weight: bolder;
-            align-content: center;
-            cursor: pointer;
-        }
+    .btn {
+      width: 77.5px;
+      height: 77.5px;
+      text-align: center;
+      background-color: antiquewhite;
+      border: brown 2px solid;
+      border-radius: 10px;
+      font-size: 40px;
+      font-weight: bolder;
+      align-content: center;
+      cursor: pointer;
+    }
 
-        .btn:hover {
-            color: crimson;
-        }
-    </style>
-    <body>
-        <div class="container">
-            <div id="screen"></div>
-            <div id="btn-list"></div>
-        </div>
-        <script src="calculator.js"></script>
-        <script src="eventHandler.js"></script>
-    </body>
+    .btn:hover {
+      color: crimson;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="screen"></div>
+      <div id="btn-list"></div>
+    </div>
+    <script src="calculator.js"></script>
+    <script src="eventHandler.js"></script>
+  </body>
 </html>
