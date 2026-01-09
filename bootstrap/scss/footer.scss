@@ -13,12 +13,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
-  "team match timebox button";
+  "teams match timebox button";
   padding: 20px;
   justify-content: space-between;
+    gap: 5vw;
 
   .teams {
-    grid-area: team;
+    grid-area: teams;
     display: flex;
     gap: 20px;
     justify-items: center;
@@ -86,21 +87,5 @@ footer {
     grid-template-areas: 
     "teams match"
     "timebox button";
-
-    .teams {
-      grid-area: teams;
-    }
-
-    .match {
-      grid-area: match;
-    }
-
-    .timebox {
-      grid-area: timebox;
-    }
-
-    button {
-      grid-area: button;
-    }
   }
 }

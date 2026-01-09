@@ -65,16 +65,4 @@ footer button {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "teams match" "timebox button";
   }
-  footer .teams {
-    grid-area: teams;
-  }
-  footer .match {
-    grid-area: match;
-  }
-  footer .timebox {
-    grid-area: timebox;
-  }
-  footer button {
-    grid-area: button;
-  }
 }/*# sourceMappingURL=footer.css.map */
